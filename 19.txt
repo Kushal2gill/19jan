@@ -1,0 +1,42 @@
+Q1 : Describe higher order functions
+ ans :  A Higher-Order function is a function that receives a function as an argument or returns the function as output.
+  .map() >> .map() method executes a callback function on each element in an array. It returns a new array made up of the return values from the callback function
+
+   .filter() Method >>
+   The .filter() method executes a callback function on each element in an array. The callback function for each of the elements must return either true or false. The returned array is a new array with any elements for which the callback function returns true.
+
+    .reduce() Method >>
+    The .reduce() method iterates through an array and returns a single value.
+
+
+    Q2 :  write use cases + any one code example for map, filter and reduce.
+    .map() method 
+    Map can be used when we want to perform an action on each element in a collection, and gather the results into a new array. 
+    ex we want to multiple each elements by 2 
+
+    code -----------
+    const dblArr = arr.map((num) =>{
+    return num*2;
+ })
+   console.log(dblArr);
+
+
+
+   .filter method
+   The filter() method creates a new array filled with elements that pass a test provided by a function.
+   ex 
+   let arr2 = [45, 23, 21, 0, 3, 5]
+   let a2 = arr2.filter((a) => {
+  return a < 10
+})
+console.log(a2)
+in the new array on those elements are present which are less than 10
+
+
+.reduce() method
+arr.reduce() method in JavaScript is used to reduce the array to a single value
+
+const sum = arr.reduce((acc,num) =>{
+    return acc +=num;
+},0);
+
